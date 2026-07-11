@@ -1,30 +1,84 @@
+/* Basic Page Setup */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
     margin: 0;
     padding: 0;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.site-header {
     text-align: center;
+    margin-bottom: 30px;
 }
-.container {
-    margin-top: 100px;
-    padding: 20px;
-}
-h1 {
+
+.site-header h1 {
     color: #a80000;
     font-size: 36px;
+    margin: 0;
 }
-p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
+
+/* Original "Job Notification" Box Design */
+.fja-list-container {
+    background: #fff;
+    margin-bottom: 30px; /* Ek box ke niche dusre box ki doori */
+    border: 1px solid #ddd;
 }
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #25D366;
-    color: #fff;
-    text-decoration: none;
+
+.fja-list-header {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 24px;
     font-weight: bold;
-    border-radius: 5px;
+    margin: 0;
+}
+
+/* 3 Boxes ke liye alag-alag colors (Jaise Sarkari websites me hota hai) */
+.bg-blue { background-color: #3b71b8; }  /* Job Notification ka original color */
+.bg-green { background-color: #008000; } /* Admit Card ke liye */
+.bg-red { background-color: #a80000; }   /* Results ke liye */
+
+.fja-list-desc {
+    color: #555;
+    font-size: 14px;
+    padding: 10px 15px 5px 15px;
+    margin: 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.fja-list-ul {
+    list-style-type: disc; /* Gol Bullets */
+    padding-left: 35px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fja-list-ul li {
+    margin-bottom: 14px;
+    color: #333;
+}
+
+.fja-list-ul li a {
+    color: #0000cc; /* Link ka original neela rang */
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.fja-list-ul li a:visited {
+    color: #551a8b; /* Click kiye hue link ka rang */
+}
+
+.fja-list-ul li a:hover {
+    text-decoration: underline;
+    color: #ff0000;
 }
